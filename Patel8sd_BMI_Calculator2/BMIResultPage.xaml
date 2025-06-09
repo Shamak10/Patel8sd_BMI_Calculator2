@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Patel8sd_BMICalculator2.BMIResultPage"
+             Title="BMI Result">
+    <VerticalStackLayout Spacing="10" Padding="25" VerticalOptions="FillAndExpand">
+        <Label Text="Your Result" FontSize="40" FontAttributes="Bold" HorizontalOptions="Center" Margin="0,20"/>
+
+        <Frame VerticalOptions="CenterAndExpand" Padding="20" CornerRadius="10">
+            <VerticalStackLayout Spacing="15" HorizontalOptions="Center">
+                <Label x:Name="CategoryLabel" Text="Normal" TextColor="Green" FontSize="Header" FontAttributes="Bold" HorizontalOptions="Center"/>
+                <Label x:Name="BmiValueLabel" Text="22.5" FontSize="90" FontAttributes="Bold" HorizontalOptions="Center"/>
+                <Label Text="Gender-specific BMI Category" FontSize="Body" HorizontalOptions="Center"/>
+            </VerticalStackLayout>
+        </Frame>
+
+        <VerticalStackLayout VerticalOptions="EndAndExpand" Spacing="10">
+            <Button Text="View Health Recommendations" FontSize="Large" Clicked="OnViewRecommendationsClicked"/>
+            <Button Text="Re-Calculate" FontSize="Large" BackgroundColor="Gray" Clicked="OnRecalculateClicked"/>
+        </VerticalStackLayout>
+
+    </VerticalStackLayout>
+</ContentPage>
